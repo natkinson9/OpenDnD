@@ -1,3 +1,4 @@
+#test
 class CharSheet
   include Mongoid::Document
   include Mongoid::Timestamps
