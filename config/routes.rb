@@ -1,10 +1,10 @@
 Rails.application.routes.draw do
-  resources :articles
-  get 'sheet/index'
+  resources :char_sheets
+  get 'char_sheets/index'
 
   resources :sheet
 
   # Defines the root path route ("/")
   # root "articles#index"
-  root 'sheet#index'
+  root 'char_sheets#index'
 end
