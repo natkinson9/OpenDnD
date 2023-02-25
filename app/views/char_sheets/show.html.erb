@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @char_sheet %>
+
+<div>
+  <%= link_to "Edit this char sheet", edit_char_sheet_path(@char_sheet) %> |
+  <%= link_to "Back to char sheets", char_sheets_path %>
+
+  <%= button_to "Destroy this char sheet", @char_sheet, method: :delete %>
+</div>
