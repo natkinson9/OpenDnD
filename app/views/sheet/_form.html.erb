@@ -1,0 +1,12 @@
+<%# app/views/sheet/_form.html.erb %>
+
+<%= simple_form_for sheet, html: { class: "sheet form" } do |f| %>
+  <% if sheet.errors.any? %>
+    <div class="error-message">
+      <%= sheet.errors.full_messages.to_sentence.capitalize %>
+    </div>
+  <% end %>
+
+  <%= f.input :name, input_html: { autofocus: true } %>
+  <%= f.submit class: "btn btn--secondary" %>
+<% end %>

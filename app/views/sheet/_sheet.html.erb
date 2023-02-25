@@ -1,0 +1,14 @@
+<%# app/views/sheet/_sheet.html.erb %>
+
+<div class="sheet">
+  <%= link_to sheet.name, sheet_path(sheet) %>
+  <div class="sheet__actions">
+    <%= button_to "Delete",
+                  sheet_path(sheet),
+                  method: :delete,
+                  class: "btn btn--light" %>
+    <%= link_to "Edit",
+                edit_sheet_path(sheet),
+                class: "btn btn--light" %>
+  </div>
+</div>

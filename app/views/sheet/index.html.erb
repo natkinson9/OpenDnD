@@ -1,0 +1,12 @@
+<%# app/views/sheet/index.html.erb %>
+
+<main class="container">
+  <div class="header">
+    <h1>Sheets</h1>
+    <%= link_to "New sheet",
+                new_sheet_path,
+                class: "btn btn--primary" %>
+  </div>
+
+ <%= render @sheet %>
+</main>
