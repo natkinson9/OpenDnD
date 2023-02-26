@@ -1,2 +1,2 @@
-json.extract! char_sheet, :id, :name, :created_at, :updated_at
+json.extract! char_sheet, :id, :player_name, :char_name, :race, :character_class, :level, :background, :proficiency_bonus, :max_hp, :current_hp, :temp_hp, :armour_class, :initiative, :strength, :dexterity, :constitution, :intelligence, :wisdom, :charisma, :passive_perception, :speed, :hit_dice, :death_save_success, :death_save_failure, :weapons, :equipment, :personality, :ideals, :bonds, :flaws, :features, :gold, :silver, :copper, :platinum, :spells, :created_at, :updated_at
 json.url char_sheet_url(char_sheet, format: :json)
