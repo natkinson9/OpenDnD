@@ -1,8 +1,6 @@
 // app/assets/stylesheets/components/_form.scss
 
 .form {
-  display: flex;
-  flex-wrap: wrap;
   gap: var(--space-xs);
 
   &__group {
@@ -10,9 +8,6 @@
   }
 
   &__input {
-    display: block;
-    width: 100%;
-    max-width: 100%;
     padding: var(--space-xxs) var(--space-xs);
     border: var(--border);
     border-radius: var(--border-radius);

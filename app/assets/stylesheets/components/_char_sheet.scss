@@ -1,10 +1,14 @@
 // app/assets/stylesheets/components/_char_sheet.scss
 
 .char_sheet {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: var(--space-s);
+  display: inline-grid;
+  grid-template-rows: 15% 15% 35% 35%;
+  grid-template-columns: 20% 60% 20%;
+  grid-template-areas: "meta meta meta"
+                        "scores scores scores"
+                        "combat features backstory"
+                        "equipment features backstory";
+  gap: var(--space-xs);
 
   background-color: var(--color-white);
   border-radius: var(--border-radius);
@@ -16,10 +20,29 @@
     padding: var(--space-xs) var(--space-m);
   }
 
-  &__actions {
-    display: flex;
-    flex: 0 0 auto;
-    align-self: flex-start;
-    gap: var(--space-xs);
-  }
+}
+
+
+.meta-info {
+  grid-area: meta;
+}
+
+.ability-scores {
+  grid-area: scores;
+}
+
+.equipment {
+  grid-area: equipment;
+}
+
+.combat {
+  grid-area: combat;
+}
+
+.features {
+  grid-area: features;
+}
+
+.backstory {
+  grid-area: backstory;
 }
