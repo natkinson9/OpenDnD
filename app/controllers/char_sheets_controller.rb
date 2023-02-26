@@ -65,6 +65,6 @@ class CharSheetsController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def char_sheet_params
-      params.require(:char_sheet).permit(:player_name, :char_name, :race)
+      params.require(:char_sheet).permit(:player_name, :char_name, :race, :class, :level, :background, :proficiency_bonus, :max_hp, :current_hp, :temp_hp, :armour_class, :initiative, :strength, :dexterity, :constitution, :intelligence, :wisdom, :charisma)
     end
 end
