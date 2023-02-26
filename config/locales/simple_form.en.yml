@@ -7,36 +7,36 @@ en:
         race: Race
         character_class: Class
         level: Level
-        background: Item
-        proficiency_bonus: Item
-        max_hp: Item
-        current_hp: Item
-        temp_hp: Item
-        armour_class: Item
-        initiative: Item
-        strength: Item
-        dexterity: Item
-        constitution: Item
-        intelligence: Item
-        wisdom: Item
-        charisma: Item
-        passive_perception: Item
-        speed: Item
-        hit_dice: Item
-        death_save_success: Item
-        death_save_failure: Item
-        weapons: Item
-        equipment: Item
-        personality: Item
-        ideals: Item
-        bonds: Item
-        flaws: Item
-        features: Item
-        gold: Item
-        silver: Item
-        copper: Item
-        platinum: Item
-        spells: Item
+        background: Background
+        proficiency_bonus: Proficiency Bonus
+        max_hp: Max HP
+        current_hp: Current HP
+        temp_hp: Temp HP
+        armour_class: Armour Class
+        initiative: Initiative
+        strength: Strength
+        dexterity: Dexterity
+        constitution: Constitution
+        intelligence: Intelligence
+        wisdom: Wisdom
+        charisma: Charisma
+        passive_perception: Passive Perception
+        speed: Speed
+        hit_dice: Hit Dice
+        death_save_success: Death Save Success
+        death_save_failure: Death Save Failure
+        weapons: Weapons
+        equipment: Equipment
+        personality: Personality
+        ideals: Ideals
+        bonds: Bonds
+        flaws: Flaws
+        features: Features
+        gold: Gold
+        silver: Silver
+        copper: Copper
+        platinum: Platinum
+        spells: Spells
 
 
     labels:
@@ -46,36 +46,36 @@ en:
         race: Item
         character_class: Class
         level: Level
-        background: Item
-        proficiency_bonus: Item
-        max_hp: Item
-        current_hp: Item
-        temp_hp: Item
-        armour_class: Item
-        initiative: Item
-        strength: Item
-        dexterity: Item
-        constitution: Item
-        intelligence: Item
-        wisdom: Item
-        charisma: Item
-        passive_perception: Item
-        speed: Item
-        hit_dice: Item
-        death_save_success: Item
-        death_save_failure: Item
-        weapons: Item
-        equipment: Item
-        personality: Item
-        ideals: Item
-        bonds: Item
-        flaws: Item
-        features: Item
-        gold: Item
-        silver: Item
-        copper: Item
-        platinum: Item
-        spells: Item
+        background: Background
+        proficiency_bonus: Proficiency Bonus
+        max_hp: Max HP
+        current_hp: Current HP
+        temp_hp: Temp HP
+        armour_class: Armour Class
+        initiative: Initiative
+        strength: Strength
+        dexterity: Dexterity
+        constitution: Constitution
+        intelligence: Intelligence
+        wisdom: Wisdom
+        charisma: Charisma
+        passive_perception: Passive Perception
+        speed: Speed
+        hit_dice: Hit Dice
+        death_save_success: Death Save Success
+        death_save_failure: Death Save Failure
+        weapons: Weapons
+        equipment: Equipment
+        personality: Personality
+        ideals: Ideals
+        bonds: Bonds
+        flaws: Flaws
+        features: Features
+        gold: Gold
+        silver: Silver
+        copper: Copper
+        platinum: Platinum
+        spells: Spells
 
   helpers:
     submit:
