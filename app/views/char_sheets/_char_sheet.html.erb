@@ -1,7 +1,14 @@
-<div id="<%= dom_id char_sheet %>">
-  <p>
-    <strong>Name:</strong>
-    <%= char_sheet.name %>
-  </p>
+
+<div class="char_sheet" id="<%= dom_id char_sheet %>">
+  <%= link_to char_sheet.name, char_sheet_path(char_sheet) %>
+  <div class="char_sheet__actions">
+    <%= link_to "Edit",
+                edit_char_sheet_path(char_sheet),
+                class: "btn btn--light" %>
+    <%= button_to "Delete",
+                  char_sheet_path(char_sheet),
+                  method: :delete,
+                  class: "btn btn--light" %>
+  </div>
 
 </div>

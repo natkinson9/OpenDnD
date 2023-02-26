@@ -3,11 +3,11 @@
 en:
   simple_form:
     placeholders:
-      quote:
+      char_sheet:
         name: Name of your Character
     labels:
-      quote:
-        name: Name
+      char_sheet:
+        name: Names
 
   helpers:
     submit:

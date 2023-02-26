@@ -1,13 +1,12 @@
+<%# app/views/char_sheet/_form.html.erb %>
 
-<%= simple_form_for(@char_sheet) do |f| %>
-  <%= f.error_notification %>
-  <%= f.error_notification message: f.object.errors[:base].to_sentence if f.object.errors[:base].present? %>
+<%= simple_form_for char_sheet, html: { class: "char_sheet form" } do |f| %>
+  <% if char_sheet.errors.any? %>
+    <div class="error-message">
+      <%= char_sheet.errors.full_messages.to_sentence.capitalize %>
+    </div>
+  <% end %>
 
-  <div class="form-inputs">
-    <%= f.input :name %>
-  </div>
-
-  <div class="form-actions">
-    <%= f.button :submit %>
-  </div>
+  <%= f.input :name, input_html: { autofocus: true } %>
+  <%= f.submit class: "btn btn--secondary" %>
 <% end %>
