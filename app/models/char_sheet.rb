@@ -1,5 +1,7 @@
 class CharSheet
   include Mongoid::Document
   include Mongoid::Timestamps
-  field :name, type: String
+  field :player_name, type: String
+  field :char_name, type: String
+  field :race, type: String
 end
