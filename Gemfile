@@ -9,6 +9,7 @@ gem 'bson_ext'
 
 gem "simple_form", "~> 5.1.0"
 
+gem 'sass-rails'
 
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
 gem "rails", "~> 7.0.4", ">= 7.0.4.2"

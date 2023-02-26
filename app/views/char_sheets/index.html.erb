@@ -1,14 +1,10 @@
-<p style="color: green"><%= notice %></p>
+<main class="container">
+  <div class="header">
+    <h1>Character Sheets</h1>
+    <%= link_to "New character sheet", new_char_sheet_path, class: "btn btn--primary" %>
+  </div>
+  <hr>
+  <br>
+  <%= render @char_sheets %>
 
-<h1>Char sheets</h1>
-
-<div id="char_sheets">
-  <% @char_sheets.each do |char_sheet| %>
-    <%= render char_sheet %>
-    <p>
-      <%= link_to "Show this char sheet", char_sheet %>
-    </p>
-  <% end %>
-</div>
-
-<%= link_to "New char sheet", new_char_sheet_path %>
+</main>
