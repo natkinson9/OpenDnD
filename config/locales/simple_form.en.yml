@@ -4,10 +4,81 @@ en:
   simple_form:
     placeholders:
       char_sheet:
-        name: Name of your Character
+        char_name: Name of your Character
+        player_name: Name of your Player
+        race: Race
+        character_class: Class
+        level: Level
+        background: Item
+        proficiency_bonus: Item
+        max_hp: Item
+        current_hp: Item
+        temp_hp: Item
+        armour_class: Item
+        initiative: Item
+        strength: Item
+        dexterity: Item
+        constitution: Item
+        intelligence: Item
+        wisdom: Item
+        charisma: Item
+        passive_perception: Item
+        speed: Item
+        hit_dice: Item
+        death_save_success: Item
+        death_save_failure: Item
+        weapons: Item
+        equipment: Item
+        personality: Item
+        ideals: Item
+        bonds: Item
+        flaws: Item
+        features: Item
+        gold: Item
+        silver: Item
+        copper: Item
+        platinum: Item
+        spells: Item
+
+
     labels:
       char_sheet:
-        name: Names
+        char_name: Name
+        player_name: Player Name
+        race: Item
+        character_class: Class
+        level: Level
+        background: Item
+        proficiency_bonus: Item
+        max_hp: Item
+        current_hp: Item
+        temp_hp: Item
+        armour_class: Item
+        initiative: Item
+        strength: Item
+        dexterity: Item
+        constitution: Item
+        intelligence: Item
+        wisdom: Item
+        charisma: Item
+        passive_perception: Item
+        speed: Item
+        hit_dice: Item
+        death_save_success: Item
+        death_save_failure: Item
+        weapons: Item
+        equipment: Item
+        personality: Item
+        ideals: Item
+        bonds: Item
+        flaws: Item
+        features: Item
+        gold: Item
+        silver: Item
+        copper: Item
+        platinum: Item
+        spells: Item
+
 
   helpers:
     submit:
