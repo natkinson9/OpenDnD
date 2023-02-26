@@ -3,10 +3,31 @@ en:
     placeholders:
       quote:
         name: Name of your Character
+        char_name: Character Name
+        race: Race
+        class: Class
+        level: Level
+        background: Background
+        proficiency_bonus: Proficiency Bonus
+        max_hp: Max Hp
+        current_hp: Current Hp
+        temp_hp: Temp Hp
+        armour_class: Armour Class
+        initiative: Initiative
     labels:
       quote:
         name: Name
         char_name: Character Name
+        race: Race
+        class: Class
+        level: Level
+        background: Background
+        proficiency_bonus: Proficiency Bonus
+        max_hp: Max Hp
+        current_hp: Current Hp
+        temp_hp: Temp Hp
+        armour_class: Armour Class
+        initiative: Initiative
 
   helpers:
     submit:
