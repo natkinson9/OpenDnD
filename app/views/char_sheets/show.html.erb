@@ -1,8 +1,10 @@
-<%= render @char_sheet %>
+<%# app/views/quotes/show.html.erb %>
 
-<div>
-  <%= link_to "Edit this char sheet", edit_char_sheet_path(@char_sheet) %> |
-  <%= link_to "Back to char sheets", char_sheets_path %>
-
-  <%= button_to "Delete this char sheet", @char_sheet, method: :delete, class: "btn btn--dark" %>
-</div>
+<main class="container">
+  <%= link_to sanitize("&larr; Back to your Characters"), char_sheets_path %>
+  <div class="header">
+    <h1>
+      <%= @char_sheet.name %>
+    </h1>
+  </div>
+</main>
