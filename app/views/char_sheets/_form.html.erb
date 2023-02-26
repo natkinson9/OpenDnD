@@ -7,39 +7,75 @@
     </div>
   <% end %>
 
-  <%= f.input :player_name %>
-  <%= f.input :char_name %>
-  <%= f.input :race %>
-  <%= f.input :character_class %>
-  <%= f.input :level %>
-  <%= f.input :background %>
-  <%= f.input :proficiency_bonus %>
-  <%= f.input :max_hp %>
-  <%= f.input :current_hp %>
-  <%= f.input :temp_hp %>
-  <%= f.input :armour_class %>
-  <%= f.input :initiative %>
-  <%= f.input :strength %>
-  <%= f.input :dexterity %>
-  <%= f.input :constitution %>
-  <%= f.input :intelligence %>
-  <%= f.input :wisdom %>
-  <%= f.input :charisma %>
-  <%= f.input :passive_perception %>
-  <%= f.input :speed %>
-  <%= f.input :hit_dice %>
-  <%= f.input :death_save_success %>
-  <%= f.input :death_save_failure %>
-  <%= f.input :weapons %>
-  <%= f.input :equipment %>
-  <%= f.input :personality %>
-  <%= f.input :ideals %>
-  <%= f.input :bonds %>
-  <%= f.input :flaws %>
-  <%= f.input :features %>
-  <%= f.input :gold %>
-  <%= f.input :silver %>
-  <%= f.input :copper %>
-  <%= f.input :platinum %>
-  <%= f.input :spells %>
+  <div class="meta-info">
+    <h1>Meta Info</h1>
+    <%= f.simple_fields_for :meta_info, OpenStruct.new(@char_sheet.meta_info) do |ff| %>
+      <%= ff.input :player_name %>
+      <%= ff.input :char_name %>
+      <%= ff.input :race %>
+      <%= ff.input :character_class %>
+      <%= ff.input :level %>
+      <%= ff.input :background %>
+      <%= ff.input :proficiency_bonus %>
+    <% end %>
+  </div>
+
+  <div class="ability-scores">
+    <h1>Ability Scores</h1>
+    <%= f.simple_fields_for :ability_scores, OpenStruct.new(@char_sheet.ability_scores) do |ff| %>
+      <%= ff.input :strength %>
+      <%= ff.input :dexterity %>
+      <%= ff.input :constitution %>
+      <%= ff.input :intelligence %>
+      <%= ff.input :wisdom %>
+      <%= ff.input :charisma %>
+      <%= ff.input :passive_perception %>
+    <% end %>
+  </div>
+
+  <div class="combat">
+    <h1>Combat</h1>
+    <%= f.simple_fields_for :combat, OpenStruct.new(@char_sheet.combat) do |ff| %>
+      <%= ff.input :max_hp %>
+      <%= ff.input :current_hp %>
+      <%= ff.input :temp_hp %>
+      <%= ff.input :armour_class %>
+      <%= ff.input :initiative %>
+      <%= ff.input :speed %>
+      <%= ff.input :hit_dice %>
+      <%= ff.input :death_save_success %>
+      <%= ff.input :death_save_failure %>
+    <% end %>
+  </div>
+
+  <div class="equipment">
+    <h1>Equipment</h1>
+    <%= f.simple_fields_for :equipment, OpenStruct.new(@char_sheet.equipment) do |ff| %>
+      <%= ff.input :weapons %>
+      <%= ff.input :equipment %>
+      <%= ff.input :platinum %>
+      <%= ff.input :gold %>
+      <%= ff.input :silver %>
+      <%= ff.input :copper %>
+    <% end %>
+  </div>
+
+  <div class="features">
+    <h1>Features</h1>
+    <%= f.simple_fields_for :features, OpenStruct.new(@char_sheet.features) do |ff| %>
+      <%= ff.input :features %>
+      <%= ff.input :spells %>
+    <% end %>
+  </div>
+
+  <div class="backstory">
+    <h1>Backstory</h1>
+    <%= f.simple_fields_for :backstory, OpenStruct.new(@char_sheet.backstory) do |ff| %>
+      <%= ff.input :personality %>
+      <%= ff.input :ideals %>
+      <%= ff.input :bonds %>
+      <%= ff.input :flaws %>
+    <% end %>
+  </div>
+
 <% end %>

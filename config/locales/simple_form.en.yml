@@ -1,81 +1,93 @@
+
 en:
   simple_form:
     placeholders:
       char_sheet:
-        char_name: Name of your Character
-        player_name: Name of your Player
-        race: Race
-        character_class: Class
-        level: Level
-        background: Background
-        proficiency_bonus: Proficiency Bonus
-        max_hp: Max HP
-        current_hp: Current HP
-        temp_hp: Temp HP
-        armour_class: Armour Class
-        initiative: Initiative
-        strength: Strength
-        dexterity: Dexterity
-        constitution: Constitution
-        intelligence: Intelligence
-        wisdom: Wisdom
-        charisma: Charisma
-        passive_perception: Passive Perception
-        speed: Speed
-        hit_dice: Hit Dice
-        death_save_success: Death Save Success
-        death_save_failure: Death Save Failure
-        weapons: Weapons
-        equipment: Equipment
-        personality: Personality
-        ideals: Ideals
-        bonds: Bonds
-        flaws: Flaws
-        features: Features
-        gold: Gold
-        silver: Silver
-        copper: Copper
-        platinum: Platinum
-        spells: Spells
-
+        meta_info:
+          char_name: Name of your Character
+          player_name: Name of your Player
+          race: Race
+          character_class: Class
+          level: Level
+          background: Item
+          proficiency_bonus: Item
+        ability_scores:
+          strength: Str
+          dexterity: Dex
+          constitution: Con
+          intelligence: Int
+          wisdom: Wis
+          charisma: Cha
+          passive_perception: Item
+        combat:
+          max_hp: Max HP
+          current_hp: HP
+          temp_hp: Temporary HP
+          armour_class: AC
+          initiative: Initiative
+          speed: Speed
+          hit_dice: HD
+          death_save_success: Item
+          death_save_failure: Item
+        equipment:
+          weapons: Weapons
+          equipment: Equipment
+          gold: GP
+          silver: SP
+          copper: CP
+          platinum: PP
+        features:
+          features: Item
+          spells: Item
+        backstory:
+          personality: Item
+          ideals: Item
+          bonds: Item
+          flaws: Item
 
     labels:
       char_sheet:
-        char_name: Name
-        player_name: Player Name
-        race: Item
-        character_class: Class
-        level: Level
-        background: Background
-        proficiency_bonus: Proficiency Bonus
-        max_hp: Max HP
-        current_hp: Current HP
-        temp_hp: Temp HP
-        armour_class: Armour Class
-        initiative: Initiative
-        strength: Strength
-        dexterity: Dexterity
-        constitution: Constitution
-        intelligence: Intelligence
-        wisdom: Wisdom
-        charisma: Charisma
-        passive_perception: Passive Perception
-        speed: Speed
-        hit_dice: Hit Dice
-        death_save_success: Death Save Success
-        death_save_failure: Death Save Failure
-        weapons: Weapons
-        equipment: Equipment
-        personality: Personality
-        ideals: Ideals
-        bonds: Bonds
-        flaws: Flaws
-        features: Features
-        gold: Gold
-        silver: Silver
-        copper: Copper
-        platinum: Platinum
-        spells: Spells
+        meta_info:
+          char_name: Name of your Character
+          player_name: Name of your Player
+          race: Race
+          character_class: Class
+          level: Level
+          background: Item
+          proficiency_bonus: Item
+        ability_scores:
+          strength: Str
+          dexterity: Dex
+          constitution: Con
+          intelligence: Int
+          wisdom: Wis
+          charisma: Cha
+          passive_perception: Item
+        combat:
+          max_hp: Max HP
+          current_hp: HP
+          temp_hp: Temporary HP
+          armour_class: AC
+          initiative: Initiative
+          speed: Speed
+          hit_dice: HD
+          death_save_success: Item
+          death_save_failure: Item
+        equipment:
+          weapons: Weapons
+          equipment: Equipment
+          gold: GP
+          silver: SP
+          copper: CP
+          platinum: PP
+        features:
+          features: Item
+          spells: Item
+        backstory:
+          personality: Item
+          ideals: Item
+          bonds: Item
+          flaws: Item
 
   helpers:
     submit:
