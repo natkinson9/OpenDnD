@@ -25,7 +25,7 @@ class CharSheetsController < ApplicationController
 
     respond_to do |format|
       if @char_sheet.save
-        format.html { redirect_to char_sheet_url(@char_sheet), notice: "Char sheet was successfully created." }
+        format.html { redirect_to edit_char_sheet_path(@char_sheet), notice: "Char sheet was successfully created." }
         format.json { render :show, status: :created, location: @char_sheet }
       else
         format.html { render :new, status: :unprocessable_entity }
@@ -38,7 +38,7 @@ class CharSheetsController < ApplicationController
   def update
     respond_to do |format|
       if @char_sheet.update(char_sheet_params)
-        format.html { redirect_to char_sheet_url(@char_sheet), notice: "Char sheet was successfully updated." }
+        format.html { redirect_to edit_char_sheet_path(@char_sheet), notice: "Char sheet was successfully updated." }
         format.json { render :show, status: :ok, location: @char_sheet }
       else
         format.html { render :edit, status: :unprocessable_entity }

@@ -1,5 +1,5 @@
 <div class="char_sheet" id="<%= dom_id char_sheet %>">
-  <%= link_to char_sheet.char_name, char_sheet_path(char_sheet) %>
+  <%= link_to char_sheet.meta_info['char_name'], edit_char_sheet_path(char_sheet) %>
   <div class="char_sheet__actions">
     <%= link_to "Edit",
                 edit_char_sheet_path(char_sheet),
