@@ -9,28 +9,32 @@
 
   <div class="meta-info">
     <h1>Meta Info</h1>
-    <%= f.simple_fields_for :meta_info, OpenStruct.new(@char_sheet.meta_info) do |ff| %>
-      <%= ff.input :player_name %>
-      <%= ff.input :char_name %>
-      <%= ff.input :race %>
-      <%= ff.input :character_class %>
-      <%= ff.input :level %>
-      <%= ff.input :background %>
-      <%= ff.input :proficiency_bonus %>
-    <% end %>
+    <div class="meta-fields">
+      <%= f.simple_fields_for :meta_info, OpenStruct.new(@char_sheet.meta_info) do |ff| %>
+        <%= ff.input :player_name %>
+        <%= ff.input :char_name %>
+        <%= ff.input :race %>
+        <%= ff.input :character_class %>
+        <%= ff.input :level %>
+        <%= ff.input :background %>
+        <%= ff.input :proficiency_bonus %>
+      <% end %>
+    </div>
   </div>
 
   <div class="ability-scores">
     <h1>Ability Scores</h1>
-    <%= f.simple_fields_for :ability_scores, OpenStruct.new(@char_sheet.ability_scores) do |ff| %>
-      <%= ff.input :strength %>
-      <%= ff.input :dexterity %>
-      <%= ff.input :constitution %>
-      <%= ff.input :intelligence %>
-      <%= ff.input :wisdom %>
-      <%= ff.input :charisma %>
-      <%= ff.input :passive_perception %>
-    <% end %>
+    <div class="score-fields">
+      <%= f.simple_fields_for :ability_scores, OpenStruct.new(@char_sheet.ability_scores) do |ff| %>
+        <%= ff.input :strength %>
+        <%= ff.input :dexterity %>
+        <%= ff.input :constitution %>
+        <%= ff.input :intelligence %>
+        <%= ff.input :wisdom %>
+        <%= ff.input :charisma %>
+        <%= ff.input :passive_perception %>
+      <% end %>
+    </div>
   </div>
 
   <div class="combat">

@@ -23,12 +23,43 @@
 }
 
 
-.meta-info {
+.meta-info,
+.ability-scores {
   grid-area: meta;
+  display: flex;
+  flex-direction: column;
+  padding-left: 1%;
+  padding-right: 1%;
+}
+
+.meta-fields {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .ability-scores {
   grid-area: scores;
+}
+
+.score-fields {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: stretch;
+}
+
+.score-fields>div {
+  margin: 1%;
+}
+
+.score-fields>div>input {
+  width: 100%;
+  height: 100%;
 }
 
 .equipment {
