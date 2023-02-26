@@ -1,5 +1,3 @@
-# config/locales/simple_form.en.yml
-
 en:
   simple_form:
     placeholders:
@@ -78,7 +76,6 @@ en:
         copper: Item
         platinum: Item
         spells: Item
-
 
   helpers:
     submit:
