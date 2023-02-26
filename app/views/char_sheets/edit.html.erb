@@ -2,8 +2,8 @@
   <%= link_to sanitize("&larr; Back to your Character Sheets"), char_sheets_path %>
 
   <div class="header">
-    <h1>Edit Character</h1>
-    <%= @char_sheet.char_name %>
+    <h1><%= @char_sheet.char_name %></h1>
+    <input type="submit" form="edit_char_sheet_<%= @char_sheet.id %>" class="btn btn--secondary" value="Update sheet">
   </div>
 
   <%= render "form", char_sheet: @char_sheet %>
