@@ -9,8 +9,8 @@ en:
           race: Race
           character_class: Class
           level: Level
-          background: Item
-          proficiency_bonus: Item
+          background: Background
+          proficiency_bonus: Proficiency Bonus
         ability_scores:
           strength: Str
           dexterity: Dex
@@ -18,7 +18,7 @@ en:
           intelligence: Int
           wisdom: Wis
           charisma: Cha
-          passive_perception: Item
+          passive_perception: Passive Perception
         combat:
           max_hp: Max HP
           current_hp: HP
@@ -27,8 +27,8 @@ en:
           initiative: Initiative
           speed: Speed
           hit_dice: HD
-          death_save_success: Item
-          death_save_failure: Item
+          death_save_success: Death Save Success
+          death_save_failure: Death Save Failure
         equipment:
           weapons: Weapons
           equipment: Equipment
@@ -37,13 +37,13 @@ en:
           copper: CP
           platinum: PP
         features:
-          features: Item
-          spells: Item
+          features: Features
+          spells: Spells
         backstory:
-          personality: Item
-          ideals: Item
-          bonds: Item
-          flaws: Item
+          personality: Personality
+          ideals: Ideals
+          bonds: Bonds
+          flaws: Flaws
 
     labels:
       char_sheet:
@@ -53,8 +53,8 @@ en:
           race: Race
           character_class: Class
           level: Level
-          background: Item
-          proficiency_bonus: Item
+          background: Background
+          proficiency_bonus: Proficiency Bonus
         ability_scores:
           strength: Str
           dexterity: Dex
@@ -62,7 +62,7 @@ en:
           intelligence: Int
           wisdom: Wis
           charisma: Cha
-          passive_perception: Item
+          passive_perception: Passive Perception
         combat:
           max_hp: Max HP
           current_hp: HP
@@ -71,8 +71,8 @@ en:
           initiative: Initiative
           speed: Speed
           hit_dice: HD
-          death_save_success: Item
-          death_save_failure: Item
+          death_save_success: Death Save Success
+          death_save_failure: Death Save Failure
         equipment:
           weapons: Weapons
           equipment: Equipment
@@ -81,13 +81,13 @@ en:
           copper: CP
           platinum: PP
         features:
-          features: Item
-          spells: Item
+          features: Features
+          spells: Spells
         backstory:
-          personality: Item
-          ideals: Item
-          bonds: Item
-          flaws: Item
+          personality: Personality
+          ideals: Ideals
+          bonds: Bonds
+          flaws: Flaws
 
   helpers:
     submit:
